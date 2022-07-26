@@ -2,9 +2,9 @@
 
 This repository contains the statistical models used for the analysis of global zooplankton biomass patterns in Heneghan et al. (2020) and Petrik et al. (in review). 
 
-The cleaned COPEPOD dataset (O'Brien 2014) used in this analysis can be found in the `Data/` folder.
-
-The statistical model was generated in an iterative process whereby the fit, error structure and biological meaning were evaluated at each step. Model 7 (m7) was selected as the best model and used in the analysis. This selection process can be recreated following the code in `GlobalZooBio_01_Model.R`. The output from each model is stored in `Output/` and the corresponding plots are in `Figures/`.
+The cleaned COPEPOD dataset (O'Brien 2014) used in this analysis can be found in the `Data/` folder. This data was generated as part of the Heneghan et al. (2020) work, and further information about the process is available from the lead authors of that paper. Our goal is to publish this process as a separate analysis in the near future.
+  
+The statistical model used in this research was generated in an iterative process whereby the fit, error structure and biological meaning were evaluated at each step. Model 7 (m7) was selected as the best model and used in this analysis. This selection process can be recreated following the code in `GlobalZooBio_01_Model.R`. The output from each model is stored in `Output/` and the corresponding plots are in `Figures/`, but please note, Model 7 (m7) was the chosen model for further analysis.
 
 The gridded global zooplankton biomass used in Petrik et al. (in review) was generated using the code in `GlobalZooBio_02_Predict.R`. The one-degree gridded satellite SST, satellite Chlorophyll *a* and bathymetry data used in the mapping can be found in `one/`. The output of the prediction is stored in `Output/`
 
