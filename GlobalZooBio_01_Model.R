@@ -1,7 +1,7 @@
 # Zooplankton Biomass Models from COPEPOD
 # Jason Everett and Anthony Richardson (UQ)
 # Created: 26th September 2019 
-# Last Updated: 2nd February 2022 
+# Last Updated: 26th July 2022 
 
 # Model Used for Heneghan et al 2020 and Petrik et al (submitted) is m7
 
@@ -12,10 +12,9 @@ library(splines)
 library(lme4)
 library(lattice)
 
-source("fHarmonic.R") # Harmonic function
-source("fPlotBiomassLM.R") # Plot Biomass LMs
+source("uils.R") # Functions for Harmonic and plotting Biomass LMs
 
-dat <- readRDS("Output/GlobalBiomassData.rds") # n = 197,413
+dat <- readRDS("Data/GlobalBiomassData.rds") # n = 197,413
 
 min_val <- min(dat$Biomass[dat$Biomass>0])/2
 

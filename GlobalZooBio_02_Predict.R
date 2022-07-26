@@ -1,5 +1,5 @@
 
-source("fHarmonic.R") # Harmonic function
+source("utils.R") # Harmonic function
 
 library(raster)
 library(ggplot2)
@@ -145,7 +145,7 @@ for(k in 1:12){ # Loop over months
 
 
 # Save the output array
-saveRDS(save_array2, file = "Outputglm_mesozoo_obs_100um.RDS", version = 3)
+saveRDS(save_array2, file = file.path("Output", "Outputglm_mesozoo_obs_100um.RDS", version = 3))
 
 
 #
